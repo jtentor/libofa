@@ -132,6 +132,7 @@ AudioData* loadWaveFile(char *file) {
     if ( channels == 2 ) ms /= 2;
 
     // No need to read the whole file, just the first 135 seconds
+    long size = bytes;
     int sampleSize = 135;
     long bytesInNSecs = sampleSize * srate * 2 * channels;
     bytes = bytes > bytesInNSecs ? bytesInNSecs : bytes;

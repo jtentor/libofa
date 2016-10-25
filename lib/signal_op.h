@@ -2,7 +2,7 @@
 
    libofa -- the Open Fingerprint Architecture library
 
-   Copyright (C) 2006 MusicIP Corporation
+   Copyright (C) 2006 Predixis Corporation
    All rights reserved.
 
 -------------------------------------------------------------------*/
@@ -34,6 +34,8 @@ public:
 	void ConvertSampleRate(long targetSR);
 	double GetCrossCorrelation();
 	double GetDuration() { return (double) NumBlocks * 1000.0 / (double) Rate; }		// In msec
+	//double GetDuration() { return Duration; }		// In msec
+	//void SetDuration(double _duration) { Duration = _duration; }		// In msec
 	short* GetBuffer() { return Data; }
 	long GetLength() { return NumBlocks; }
 	long GetRate() { return Rate; }
@@ -45,6 +47,7 @@ private:
 	long NumBlocks;		// number of data blocks (= number of sample points)
 	long Rate;			// Sample rate
 	int NumChannels;	// number of channels
+	double Duration;
 };
 
 

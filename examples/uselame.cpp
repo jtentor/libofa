@@ -9,8 +9,6 @@
 #include "protocol.h"
 #ifdef WIN32
 #include "windows.h"
-#else
-#include <sys/wait.h>
 #endif
 
 AudioData *loadWaveFile(char *file);
@@ -53,6 +51,7 @@ AudioData* loadDataUsingLAME(char *file) {
 #else
     pid_t pid = fork();
     char * flag = "--decode";
+    char * temp = "fpTemp.wav";
     char * cmd = "lame"; // lame path
     char * argv[4] = {cmd, flag, file, temp};
     if (execv(cmd, (char **) argv) == -1) {

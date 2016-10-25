@@ -2,7 +2,7 @@
 
    libofa -- the Open Fingerprint Architecture library
 
-   Copyright (C) 2006 MusicIP Corporation
+   Copyright (C) 2006 Predixis Corporation
    All rights reserved.
 
 -------------------------------------------------------------------*/
@@ -101,7 +101,9 @@ const char *ofa_create_print(unsigned char *data, int byteOrder, long size, int 
 void
 preprocessing(short* samples, long size, int sRate, bool stereo, Signal_op& sig)
 {
+
 	int ch = stereo ? 2 : 1;
+	//sig.SetDuration((double) size / (double)ch * 1000.0 / (double) sRate);
 	long sec135 = 135 * sRate * ch;
 	if (size > sec135) size = sec135; 
 

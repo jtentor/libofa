@@ -2,7 +2,7 @@
 
    libofa -- the Open Fingerprint Architecture library
 
-   Copyright (C) 2006 MusicIP Corporation
+   Copyright (C) 2006 Predixis Corporation
    All rights reserved.
 
 -------------------------------------------------------------------*/
@@ -356,9 +356,12 @@ Signal_op::GetCrossCorrelation()
 	long k;
 	double C12 = 0, C11 = 0, C22 = 0;
 	short* samples = Data;
+	int	z;
 
 	for (k=0; k<NumBlocks*2; k+=2) 
 	{
+		if ( k == 5955550l )
+			z = 0;
 		C12 += samples[k]*samples[k+1];
 		C11 += samples[k]*samples[k];
 		C22 += samples[k+1]*samples[k+1];
