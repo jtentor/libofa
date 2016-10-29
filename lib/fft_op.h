@@ -15,7 +15,7 @@
 #define __FFT_OP_H 1
 
 #ifdef WIN32
-#include "../config_win32.h"
+#include "../config_Windows.h"
 #else
 #include "../config.h"
 #endif

@@ -40,21 +40,23 @@ Real hypot(const Real &a, const Real &b)
 
 /**
 	@returns the minimum of scalars a and b.
+*/
 template <class Scalar>
 Scalar min(const Scalar &a, const Scalar &b)
 {
 	return  a < b ? a : b;
 }
-*/
+
 
 /**
 	@returns the maximum of scalars a and b.
+*/
 template <class Scalar>
 Scalar max(const Scalar &a, const Scalar &b)
 {
 	return  a > b ? a : b;
 }
-*/
+
 
 /**
 	@returns the absolute value of a real (no-complex) scalar.
