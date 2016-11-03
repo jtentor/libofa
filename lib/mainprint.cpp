@@ -41,7 +41,11 @@ char *base64encode(const char *input, int lentext);
 extern "C"
 void ofa_get_version(int *major, int *minor, int *rev)
 {
-    sscanf(VERSION, "%d.%d.%d", major, minor, rev);
+#ifdef WIN32
+	sscanf_s(VERSION, "%d.%d.%d", major, minor, rev);
+#else
+	sscanf(VERSION, "%d.%d.%d", major, minor, rev);
+#endif
 }
 
 // ofa_create_print is the top level function generating the fingerprint.
@@ -87,7 +91,12 @@ const char *ofa_create_print(unsigned char *data, int byteOrder, long size, int 
 	Signal_op sig;
 	unsigned char bytes[Dim * Res * 2 + 5];
 
+#ifdef WIN32
+	preprocessing(samples, size, sRate, !!stereo, sig); // double negation to make MSC++ hapy
+#else
 	preprocessing(samples, size, sRate, stereo, sig);
+#endif
+
 	bytes[0] = 1; // version marker
 	core_print(sig, bytes + 1);
 	pitch_print(sig, bytes + (Dim * Res * 2 + 1));

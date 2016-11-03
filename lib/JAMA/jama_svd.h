@@ -381,7 +381,7 @@ class SVD
                      e[j-1] = (Real)t;
                   }
                   f = cs*s[j] + sn*e[j];
-                  e[j] = cs*e[j] - sn*s[j];
+                  e[j] = (Real)(cs*e[j] - sn*s[j]);
                   g = sn*s[j+1];
                   s[j+1] = (Real)cs*s[j+1];
                   if (wantv) {
