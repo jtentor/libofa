@@ -15,9 +15,9 @@
 #define __FFT_OP_H 1
 
 #ifdef WIN32
-#include "../config_Windows.h"
+#include "config_Windows.h"
 #else
-#include "../config.h"
+#include "config.h"
 #endif
 #include "signal_op.h"
 #include "fftlib_op.h"
