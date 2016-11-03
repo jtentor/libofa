@@ -12,9 +12,9 @@
 // DATE CREATED: 1/12/06
 
 #ifdef WIN32
-#include "../config_win32.h"
+#include "config_Windows.h"
 #else
-#include "../config.h"
+#include "config.h"
 #endif
 #include "fftlib_op.h"
 
