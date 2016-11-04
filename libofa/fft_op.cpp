@@ -13,7 +13,7 @@
 
 #include <vector>
 #include <math.h>
-#include "ofa1/ofa.h"
+#include "libofa/ofa.h"
 #include "fft_op.h"
 #include "error_op.h"
 
