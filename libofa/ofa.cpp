@@ -6,13 +6,15 @@
    All rights reserved.
 
 -------------------------------------------------------------------*/
-// FILE: "mainprint.cpp"
+// FILE: "ofa.cpp"
 // MODULE: Top level calling code and main functions
 // AUTHOR: Frode Holm
 // DATE CREATED: 1/12/06
 
 #include <vector>
-#include "ofa1/ofa.h"
+
+#include "libofa/ofa.h"
+
 #include "signal_op.h"
 #include "fft_op.h"
 #include "frametracker_op.h"

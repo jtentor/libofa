@@ -152,35 +152,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\lib\AFLIB\aflibConverter.cpp" />
-    <ClCompile Include="..\lib\fftlibw3_op.cpp" />
-    <ClCompile Include="..\lib\fft_op.cpp" />
-    <ClCompile Include="..\lib\frametracker_op.cpp" />
-    <ClCompile Include="..\lib\mainprint.cpp" />
-    <ClCompile Include="..\lib\signal_op.cpp" />
-    <ClCompile Include="..\lib\trackdata_op.cpp" />
-    <ClCompile Include="..\lib\trackframe_op.cpp" />
-    <ClCompile Include="..\lib\tracklist_op.cpp" />
+    <ClCompile Include="..\libofa\AFLIB\aflibConverter.cpp" />
+    <ClCompile Include="..\libofa\fftlibw3_op.cpp" />
+    <ClCompile Include="..\libofa\fft_op.cpp" />
+    <ClCompile Include="..\libofa\frametracker_op.cpp" />
+    <ClCompile Include="..\libofa\ofa.cpp" />
+    <ClCompile Include="..\libofa\signal_op.cpp" />
+    <ClCompile Include="..\libofa\trackdata_op.cpp" />
+    <ClCompile Include="..\libofa\trackframe_op.cpp" />
+    <ClCompile Include="..\libofa\tracklist_op.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\config_Windows.h" />
-    <ClInclude Include="..\lib\AFLIB\aflibConverter.h" />
-    <ClInclude Include="..\lib\AFLIB\aflibConverterLargeFilter.h" />
-    <ClInclude Include="..\lib\AFLIB\aflibConverterSmallFilter.h" />
-    <ClInclude Include="..\lib\error_op.h" />
-    <ClInclude Include="..\lib\fftlib_op.h" />
-    <ClInclude Include="..\lib\fft_op.h" />
-    <ClInclude Include="..\lib\frametracker_op.h" />
-    <ClInclude Include="..\lib\JAMA\jama_svd.h" />
-    <ClInclude Include="..\lib\JAMA\tnt_array1d.h" />
-    <ClInclude Include="..\lib\JAMA\tnt_array1d_utils.h" />
-    <ClInclude Include="..\lib\JAMA\tnt_array2d.h" />
-    <ClInclude Include="..\lib\JAMA\tnt_array2d_utils.h" />
-    <ClInclude Include="..\lib\JAMA\tnt_math_utils.h" />
-    <ClInclude Include="..\lib\signal_op.h" />
-    <ClInclude Include="..\lib\trackdata_op.h" />
-    <ClInclude Include="..\lib\trackframe_op.h" />
-    <ClInclude Include="..\lib\tracklist_op.h" />
+    <ClInclude Include="..\include\libofa\ofa.h" />
+    <ClInclude Include="..\libofa\AFLIB\aflibConverter.h" />
+    <ClInclude Include="..\libofa\AFLIB\aflibConverterLargeFilter.h" />
+    <ClInclude Include="..\libofa\AFLIB\aflibConverterSmallFilter.h" />
+    <ClInclude Include="..\libofa\config_Windows.h" />
+    <ClInclude Include="..\libofa\error_op.h" />
+    <ClInclude Include="..\libofa\fftlib_op.h" />
+    <ClInclude Include="..\libofa\fft_op.h" />
+    <ClInclude Include="..\libofa\frametracker_op.h" />
+    <ClInclude Include="..\libofa\JAMA\jama_svd.h" />
+    <ClInclude Include="..\libofa\JAMA\tnt_array1d.h" />
+    <ClInclude Include="..\libofa\JAMA\tnt_array1d_utils.h" />
+    <ClInclude Include="..\libofa\JAMA\tnt_array2d.h" />
+    <ClInclude Include="..\libofa\JAMA\tnt_array2d_utils.h" />
+    <ClInclude Include="..\libofa\JAMA\tnt_math_utils.h" />
+    <ClInclude Include="..\libofa\signal_op.h" />
+    <ClInclude Include="..\libofa\trackdata_op.h" />
+    <ClInclude Include="..\libofa\trackframe_op.h" />
+    <ClInclude Include="..\libofa\tracklist_op.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

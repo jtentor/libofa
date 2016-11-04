@@ -1,6 +1,6 @@
 /*!
 
-License Public Domain (CC0) 2016 Julio Tentor
+License Public Domain (CC0) 2016 Julio Tentor (jtentor@gmail.com)
 
 To the extent possible under law, Julio Tentor has waived all copyright and related
 or neighboring rights. This work is published from: Jujuy - Argentina.
@@ -10,7 +10,7 @@ http://creativecommons.org/publicdomain/zero/1.0/
 */
 
 #include "AudioWav.h"
-#include "ofa1/ofa.h"
+#include "libofa/ofa.h"
 
 
 int main(int argc, char **argv) {
