@@ -13,96 +13,108 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\AFLIB">
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{d9880330-955e-466b-bfdc-4c4438f6dafb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\libofa">
+      <UniqueIdentifier>{8b83169d-bb95-4d04-b3ec-9a0f718a0443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libofa">
+      <UniqueIdentifier>{ce9ba5ff-53ab-4b60-8765-0f4e7b090570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libofa\AFLIB">
       <UniqueIdentifier>{5551adc4-6753-4887-b328-98212568908e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\JAMA">
+    <Filter Include="Source Files\libofa\JAMA">
       <UniqueIdentifier>{3c8acc9c-9df1-43a1-8614-52ae8bd7665a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\lib\AFLIB\aflibConverter.cpp">
-      <Filter>Source Files\AFLIB</Filter>
+    <ClCompile Include="..\libofa\fft_op.cpp">
+      <Filter>Source Files\libofa</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\fft_op.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\libofa\fftlibw3_op.cpp">
+      <Filter>Source Files\libofa</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\fftlibw3_op.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\libofa\frametracker_op.cpp">
+      <Filter>Source Files\libofa</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\frametracker_op.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\libofa\ofa.cpp">
+      <Filter>Source Files\libofa</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\mainprint.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\libofa\signal_op.cpp">
+      <Filter>Source Files\libofa</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\signal_op.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\libofa\trackdata_op.cpp">
+      <Filter>Source Files\libofa</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\trackdata_op.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\libofa\trackframe_op.cpp">
+      <Filter>Source Files\libofa</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\trackframe_op.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\libofa\tracklist_op.cpp">
+      <Filter>Source Files\libofa</Filter>
     </ClCompile>
-    <ClCompile Include="..\lib\tracklist_op.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\libofa\AFLIB\aflibConverter.cpp">
+      <Filter>Source Files\libofa\AFLIB</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\lib\AFLIB\aflibConverter.h">
-      <Filter>Source Files\AFLIB</Filter>
+    <ClInclude Include="..\include\libofa\ofa.h">
+      <Filter>Header Files\include\libofa</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\AFLIB\aflibConverterLargeFilter.h">
-      <Filter>Source Files\AFLIB</Filter>
+    <ClInclude Include="..\libofa\AFLIB\aflibConverter.h">
+      <Filter>Source Files\libofa\AFLIB</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\AFLIB\aflibConverterSmallFilter.h">
-      <Filter>Source Files\AFLIB</Filter>
+    <ClInclude Include="..\libofa\AFLIB\aflibConverterLargeFilter.h">
+      <Filter>Source Files\libofa\AFLIB</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\JAMA\jama_svd.h">
-      <Filter>Source Files\JAMA</Filter>
+    <ClInclude Include="..\libofa\AFLIB\aflibConverterSmallFilter.h">
+      <Filter>Source Files\libofa\AFLIB</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\JAMA\tnt_array1d.h">
-      <Filter>Source Files\JAMA</Filter>
+    <ClInclude Include="..\libofa\JAMA\jama_svd.h">
+      <Filter>Source Files\libofa\JAMA</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\JAMA\tnt_array1d_utils.h">
-      <Filter>Source Files\JAMA</Filter>
+    <ClInclude Include="..\libofa\JAMA\tnt_array1d.h">
+      <Filter>Source Files\libofa\JAMA</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\JAMA\tnt_array2d.h">
-      <Filter>Source Files\JAMA</Filter>
+    <ClInclude Include="..\libofa\JAMA\tnt_array1d_utils.h">
+      <Filter>Source Files\libofa\JAMA</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\JAMA\tnt_array2d_utils.h">
-      <Filter>Source Files\JAMA</Filter>
+    <ClInclude Include="..\libofa\JAMA\tnt_array2d.h">
+      <Filter>Source Files\libofa\JAMA</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\JAMA\tnt_math_utils.h">
-      <Filter>Source Files\JAMA</Filter>
+    <ClInclude Include="..\libofa\JAMA\tnt_array2d_utils.h">
+      <Filter>Source Files\libofa\JAMA</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\error_op.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\libofa\JAMA\tnt_math_utils.h">
+      <Filter>Source Files\libofa\JAMA</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\fft_op.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\libofa\config_Windows.h">
+      <Filter>Source Files\libofa</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\fftlib_op.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\libofa\error_op.h">
+      <Filter>Source Files\libofa</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\frametracker_op.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\libofa\fft_op.h">
+      <Filter>Source Files\libofa</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\signal_op.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\libofa\fftlib_op.h">
+      <Filter>Source Files\libofa</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\trackdata_op.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\libofa\frametracker_op.h">
+      <Filter>Source Files\libofa</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\trackframe_op.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\libofa\signal_op.h">
+      <Filter>Source Files\libofa</Filter>
     </ClInclude>
-    <ClInclude Include="..\lib\tracklist_op.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\libofa\trackdata_op.h">
+      <Filter>Source Files\libofa</Filter>
     </ClInclude>
-    <ClInclude Include="..\config_Windows.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\libofa\trackframe_op.h">
+      <Filter>Source Files\libofa</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libofa\tracklist_op.h">
+      <Filter>Source Files\libofa</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
