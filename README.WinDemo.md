@@ -18,13 +18,13 @@ Directory structure may look like this to keep the solution and project referenc
 ```
    libofa
       |
-      |---lib          ; contains libofa headers and sources files
+      |---libofa       ; contains libofa headers and sources files
       |    |---AFLIB
       |    |---JAMA
       |    . . .
       |
       |---include
-      |    |---ofa1    ; contains ofa.h
+      |    |---libofa  ; contains ofa.h
       |
       |---WinDemo      ; contains visual studio solution and project files
       |    |---Debug   ; after build contains the WindDemo.exe (in debug mode)
